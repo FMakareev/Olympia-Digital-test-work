@@ -1,0 +1,116 @@
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navicon-icon_plus {
+  &:before {
+    content: $navicon-icon_plus;
+  }
+}
+
+.navicon-icon_likes {
+  &:before {
+    content: $navicon-icon_likes;
+  }
+}
+
+.navicon-icon_qustion {
+  &:before {
+    content: $navicon-icon_qustion;
+  }
+}
+.navicon-icon_x {
+  &:before {
+    content: $navicon-icon_x;
+  }
+}
+.navicon-icon_views {
+  &:before {
+    content: $navicon-icon_views;
+  }
+}
+.navicon-search {
+  &:before {
+    content: $navicon-search;
+  }
+}
+.navicon-icon_widgets {
+  &:before {
+    content: $navicon-icon_widgets;
+  }
+}
+.navicon-icon_preferences {
+  &:before {
+    content: $navicon-icon_preferences;
+  }
+}
+.navicon-icon_news {
+  &:before {
+    content: $navicon-icon_news;
+  }
+}
+.navicon-icon_man {
+  &:before {
+    content: $navicon-icon_man;
+  }
+}
+.navicon-icon_info {
+  &:before {
+    content: $navicon-icon_info;
+  }
+}
+.navicon-icon_dialog {
+  &:before {
+    content: $navicon-icon_dialog;
+  }
+}
+.navicon-icon_birthday {
+  &:before {
+    content: $navicon-icon_birthday;
+  }
+}
+.navicon-icon_around {
+  &:before {
+    content: $navicon-icon_around;
+  }
+}
+.navicon-icon_bell {
+  &:before {
+    content: $navicon-icon_bell;
+  }
+}
+
+
+.SVG__arrow{
+    &__circle{
+        fill: #fff;
+        transition: all .2s ease-in-out;
+    }
+    &__arrow{
+        fill: #fff;
+        fill-rule: evenodd;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

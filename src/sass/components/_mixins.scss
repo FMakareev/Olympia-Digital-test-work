@@ -1,0 +1,24 @@
+@mixin bg-img($img) {
+    background-image: url("/image/" + $img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin bg-size-pf{
+    -ms-behavior: url(polyfill/backgroundsize.min.htc);
+}
+@mixin sct-pad($top:70px,$bottom:70px){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+// @extend %clearfix;
+%clearfix {
+  
+  &:before, &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+}

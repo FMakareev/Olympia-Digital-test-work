@@ -1,0 +1,69 @@
+// ФУНКЦИЯ ПРЕОБРАЗОВАНИЯ СТРОКИ В МАССИВ
+- function strTrans(jsonobj){
+-   return jsonobj.split(',')
+- }
+// Стартовые переменные
+// МАССИВ ЗАГОЛОВКОВ ПУНКТОВ МЕНЮ
+- var textLink = strTrans(navbar.TextLink);
+// ВКЛ|ВЫКЛ выпадашки в меню
+- var navbarDD = navbar.DD;
+// ВКЛ|ВЫКЛ LOGO в меню
+- var brandControl = navbar.brand;
+// ID для меню
+- var containerID = navbar.ContainerID
+
+mixin nav-bar
+    .navbar-header
+        button(class=navbarToggle.navbarToggleClass, type='button', data-toggle='collapse', data-target='#' + containerID)
+            span.sr-only 
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        - if(brandControl == true)    
+            a(href="#", class=brand.brandClass )
+                img.logo__image(src="/image/head__icon-home.png")
+    div(id=containerID, class=navbar.ContainerClass)
+        ul(class=navbar.ListClass)
+            - var num;
+            - for(var i = 0; i < textLink.length;i++)
+                - for(var a = 0;a < navbar.DDListPos.length;a++)
+                    - if (i == navbar.DDListPos[a])
+                        - num = a                      
+                - if (navbarDD == true && i == navbar.DDListPos[num])
+                    li(class=navbar.DDContainerClass)
+                        a(href='#', class=navbar.DDTtoggleClass, data-toggle="dropdown")= textLink[i]
+                            b.caret
+                        ul(class=navbar.DDListClass)
+                            - for(var b = 0; b < navbar.DDText[num].length; b++)                                    
+                                li
+                                    a(href="#!")= navbar.DDText[num][b]
+                - else   
+                    li
+                        a(href='#')= textLink[i]    
+                        
+mixin servicesList(array)
+    - var newArray = strTrans(array);
+    ul(class="services__list")
+        - for(var i = 0;i < newArray.length;i++)
+            li.services__item= newArray[i]
+mixin footerNav(array)
+    - var newArray = strTrans(array);
+    ul(class="footer__nav-list")
+        - for(var i = 0;i < newArray.length;i++)
+            li.footer__nav-item
+                a.footer__nav-link(href="#!")=newArray[i]
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        

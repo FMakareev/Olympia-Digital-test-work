@@ -1,0 +1,83 @@
+header.header
+    .header__container
+        .header__left
+            nav.nav
+                button.btn-burger.js-btn-burger 
+                    .birger-icon &#9776;
+                    i.navicon-icon_x
+                ul.nav__list.js-nav__list
+                    li.nav__item
+                        a(href="#").nav__link Новости
+                    li.nav__item
+                        a(href="#").nav__link Информация
+                    li.nav__item
+                        a(href="#").nav__link Лента 
+                    li.nav__item
+                        a(href="#").nav__link Группы
+                    li.nav__item
+                        a(href="#").nav__link Сотрудники
+                    li.nav__item
+                        a(href="#").nav__link Политика и регламенты
+            .search
+                .search__wrapper
+                    input#searchInp(type="search", name="search", placeholder="Введите запрос")
+                button.js-btn-search
+                    i.navicon-search
+                    i.navicon-icon_x
+        .header__right
+            .user.js-menuToggle
+                .user__wrapper
+                    .user__photo
+                        img(src="/image/userPhoto.png", alt="")
+                    .user__name Маргарита Константинова
+                .user__menu.js-user__menu
+                    ul.user__menu-main
+                        li.user__menu-item
+                            a.user__menu-link(href="#") Мой профиль
+                        li.user__menu-item
+                            a.user__menu-link(href="#") Личные сообщения
+                        li.user__menu-item
+                            a.user__menu-link(href="#") Задачи
+                        li.user__menu-item
+                            a.user__menu-link(href="#") Мой календарь
+                        li.user__menu-item
+                            a.user__menu-link(href="#") Выйти               
+            .notification.js-menuToggle
+                button
+                .user__menu.js-user__menu
+                    ul.user__menu-main.user__menu-main__submenu                
+                        li.user__menu-item.message__red
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                             
+                                span.text У вас новая задача
+                        li.user__menu-item.message__red
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                            
+                                span.text Сегодня истекает срок решения двух задач
+                        li.user__menu-item.message__blue
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                            
+                                span.text Напоминание из вашего календаря
+                        li.user__menu-item.message__green
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                            
+                                span.text Михайил Петров оставил(а) вам личное сообщение
+                        li.user__menu-item.message__green
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                            
+                                span.text Василий Корнев оставил(а) запись на вашей стене
+                        li.user__menu-item.message__green
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                            
+                                span.text Татьяна Жуковская подписался(ась) на вас
+                        li.user__menu-item.message__gray
+                            span.icon 
+                                i.navicon-icon_bell
+                            a.user__menu-link(href="#")                            
+                                span.text Пожалуйста, заполните профиль

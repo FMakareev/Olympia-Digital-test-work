@@ -1,0 +1,34 @@
+{  
+    "navbar": {
+        "brand": true,
+        "TextLink": "Новости,Статьи,Клиника,Контакты,Разделы медицины,Вопрос-ответ",
+        "ContainerClass": "collapse navbar-collapse",
+        "ContainerID": "header__navID",
+        "ListClass": "nav navbar-nav header__nav-list",
+        
+        "DD": false,
+        "DDContainerClass": "dropdown",
+        "DDTtoggleClass": "dropdown-toggle",
+        "DDText": [["R32D332", "ccC3PO", "BddB8","BddB8"],["R32D", "3PO", "B8","BB8"],["B8","BB8"]],
+        "DDListClass": "dropdown-menu",
+        "DDListPos": ["0","2","5"]
+    }, 
+    "navbarFooter": {
+        "TextLink": "Портфолио, Бриф, Контакты, Политика конфиденциальности"  
+    },
+    "navbarToggle":{
+        "navbarToggleClass" : "navbar-toggle collapsed"
+    },
+    "brand": {
+        "brandLink": "#LOGO",
+        "brandClass": "navbar-brand"
+    },
+    "gallery": {
+        "brand": false,
+        "textlink": "item4, item5, item6, item7",
+        "containerID": "galleryID"
+    },
+    "services":{
+        "list": " - Сайты-визитки, - Лендинги, - Корпоративные сайты-визитки / Корпоративные порталы, - Интернет магазины, - Системы управления контентом (cms), - Web-приложения"
+    }
+}
